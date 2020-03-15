@@ -25,7 +25,9 @@ SECRET_KEY = '(=8(n0zgk9(@a1(_8ohk30(^=o*e0lh&1nb%+%fr6vza5unn75'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+# develop 는 모든 Host 허용
+# 배포할 땐 허용 가능 호스트를 추가해야 함!
 
 
 # Application definition
