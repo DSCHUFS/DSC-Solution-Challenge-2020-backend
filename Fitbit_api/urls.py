@@ -15,6 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from rest_framework import routers
+from api.views import PersonViewSet
+
+router = routers.DefaultRouter()
+router.register('persons', PersonViewSet)  # prefix = presions, viewset = PersionViewSet
 
 urlpatterns = [
     path('admin/', admin.site.urls),
